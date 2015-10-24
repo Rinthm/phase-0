@@ -1,4 +1,4 @@
-# 1.1 Thinking About Time Reflection
+# 1.1 Think About Time Reflection
 
 I learned about the concept of “flow”, counterintuitive productivity, meditation, habit forming (tiny habits), time boxing, and probably a few other things I can’t recall right now! It’s hard to choose one topic that particularly interested me, as they all had their own merits. I really enjoyed the concept of “flow” and ways to potentially measure it. I have experienced this state a lot in my life and constantly attempt to enter into it whenever I can.
 
@@ -39,19 +39,3 @@ I also need to start using a calendar… :)
 **help** - Gives information on a given command (I used “man” for OS X)
 
 # 1.4 Forking and Cloning Reflection
-
-My (super sexy) instructions:
-
---------------------------------
-
-To **create a new repo**, you will need to do the following. First, go to log into your Github account. At the top right of your screen to the left of your account avatar, there should be a “+” sign. Click on this, and click on “New repository”. Then give your new repo a name, customize it, and click “Create repository” when you’re done. Ya did it!
-
-To **fork a repo**, click on the link to the desired repo. Then, click on the “Fork” icon (top-right of screen) and select the desired fork location. DONE.
-
-To **clone a repo**, buy or make a cloning machine and chuck it in there for a few minutes. Just kidding! There is a “clone URL” on the right of your screen (when you are in the desired repository). Copy that URL! Then go to your shell and find your way to your git account if you aren’t already there. Now type in “git clone [URL]” where [URL] is the URL that you just copied. BOOM! Nailed it. To check that it indeed worked, type “-ls” and you should see the newly cloned repository just straight chillin’ locally in your git account.
-
--------------------------------
-
-When you fork a repository, you gain access to the files within that repository, but won’t make any changes to the repository you forked from. This is good for working on open source projects.
-
-The setup of git and Github wasn’t too difficult. I did accidentally clone "phase-0" into “p0-cli-exploration”, but in doing so I learned how to remove the file in the shell and then clone it correctly into my git account.
