@@ -1,0 +1,85 @@
+html {
+  color: #000080;
+  background-color: #ffffff;
+  
+}
+
+a:link {
+  color: purple;
+}
+
+a:visited {
+  color: red;
+}
+
+#first {
+    float: left;
+    width: 40%;
+    margin: 0 1.5%;
+}
+
+#second {
+    float: right;
+    width: 40%;
+    margin: 0 1.5%;
+}
+
+p {
+    font-size: 10px;
+}
+#hh1 {
+    font-size: 12px;
+}
+#hh2 {
+    font-size: 14px;
+}
+#hh3 {
+    font-size: 16px;
+}
+h1 {
+    font-weight: bold;
+    width:30%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+footer {
+    margin-top: -150px;
+    height: 150px;
+    position: relative;
+    clear: both;
+}
+
+#firstp {
+    width:40%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#linebreak {
+    border: 0;
+    height: 1px;
+    color: black;
+}
+
+/*
+-What is important to know when linking an external file (like a stylesheet) to an HTML file?
+
+It is important to know the relationship, the text style, and the link path.
+
+-What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+
+We used a lot of ids and I looked up codecademy a lot. It was very difficult to get our site exactly like the original one. 
+
+-What CSS did you use to modify the element style (like size, color, etc.)
+
+See above! :)
+
+-Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, how would you know which one to add to your HTML?
+
+We just used ids. I chose to use them because I remembered them from codecademy, but I can't remember the difference off the top of my head.
+
+-When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+
+The actual code base had cleaner code because we got kind of lost a lot. Ours had better practice because we used CSS for styling instead of just styling in html.
+*/
