@@ -1,25 +1,10 @@
 # phase-0-gps-1
+##git commands used up until this point
+- git add - will move untracked files to tracked files to be committed
+- git commit - saves a copy of the file to the current working branch
+- git checkout -b - git checkout allows you to switch from branch to branch, checkout -b allows you to create a new branch and also switch into it at the same time
+- git push origin master - takes the changes you have committed and pushes them from your local to remote
+- git clone [url.git] - takes a copy of a github repo and clones it locally to whatever directory you are in
+- git status - shows your untracked and tracked files and what branch you are on
 
---git clone repo-url
 
-Copies remote repository from GitHub down to local repository (aka git).
-
---git status
-
-Checks for files in the repository which have not been staged for commit.
-
---git add
-
-Add altered files from the local repository to the stage to be commited.
-
---git commit -m "..."
-
-Translates changes made to the local repository (git) up to the remote repository (GitHub).
-
---git push origin master
-
-Pushes committed files from the local master branch repository up to the remote master branch repository.
-
---git checkout -b feature-branch-name
-
-Creates a new working branch and places us within it.
