@@ -14,7 +14,7 @@ I did! I felt a little constrained with the time limit, and in fact spent more t
 I revised my wireframe as I went. I like to experiment and put things together as I go and based on what makes the most sense visually.
 
 **What questions did you ask during this challenge? What resources did you find to help you answer them?**
-I wondered about what to put in a footer and found a page via google discussing "the anatomy of a footer".
+I wondered about what to put in a footer and found a page via google discussing "the anatomy of a footer."
 
 **Which parts of the challenge did you enjoy and which parts did you find tedious?**
 I enjoyed the visual aspect of designing the wireframe. I used Balsamiq Mockups 3 and found it to be very intuitive and fun. Figuring out all of the specific information that had to go into the wireframe was a bit tedious.
