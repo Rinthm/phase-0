@@ -1,14 +1,19 @@
-###What git concepts were you struggling with prior to the GPS session?
-I feel like I had a pretty solid understanding of git before the GPS session. 
+**What git concepts were you struggling with prior to the GPS session?**
 
-###What concepts were clarified during the GPS?
-I now understand how merge conflicts can happen and how to prevent them from happening. Otherwise the session was actually more difficult and disorienting than working alone!
+I had a pretty good understanding of git concepts prior to the GPS session.
 
-###What questions did you ask your pair and the guide?
-I asked a lot of questions about which repository I should be in and whether to use the command line or GitHub due to being anxious and losing focus. 
+**What concepts were clarified during the GPS?**
 
-###What still confuses you about git?
-I am still confused about effectively merging repos. I was able to fetch the changes during Release 4, but the merge said the master branch was up to date. 
+I learned that the "git fetch/git merge" function is the same as the "git pull" function, and that there may be times that you want to fetch a file but not merge it locally, e.g. if you want to change something remotely but not save it locally.
 
-###How was your first experience of pairing in a GPS?
-It was pretty difficult to stay focused while also having to communicate each step and make sure we were both on the same page. I was pretty anxious and temporarily forgot how to do some things that were previously obvious. It was awesome having someone to help when I was stuck and being able to help when the other person was confused, and the guide being there helped as well. When the guide left, we got a little lost on Release 4 and I wasn't able to merge the changes locally. Also, we didn't clarify what it meant to be a driver or navigator, and I was surprised at how difficult that made the workflow.
+**What questions did you ask your pair and the guide?**
+
+I asked both my pair and the guide for minor clarifications along the way, e.g. "is this the correct syntax?" 
+
+**What still confuses you about git?**
+
+I think I got it down pretty well; at least the concepts I've learned thus far.
+
+**How was your first experience of pairing in a GPS?**
+
+Well it actually wasn't my first GPS as I previously completed a few weeks of DBC before switching cohorts/locations, but it was good! We had a few hiccups along the way, but they turned out to be learning opportunities. :)
