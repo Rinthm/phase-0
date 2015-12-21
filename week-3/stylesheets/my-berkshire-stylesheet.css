@@ -1,85 +1,122 @@
 html {
   color: #000080;
   background-color: #ffffff;
-  
 }
 
-a:link {
-  color: purple;
+header {
+    text-align: center;
+    font-weight: bold;
+    font-family: cursive;
+    border-bottom: 1px solid black;
+    padding: 1em;
+}
+
+#face {
+  margin: auto;
+  display: block;
+}
+
+.big {
+    font-size: 25px;
+}
+
+.small {
+    font-size: 15px;
+}
+
+.teenie {
+    font-size: 10px;
+    display: block;
+}
+
+li {
+  padding: 1em;
+}
+
+a {
+  color: #800080;
 }
 
 a:visited {
-  color: red;
+  color: #ff0000;
 }
 
-#first {
-    float: left;
-    width: 40%;
-    margin: 0 1.5%;
+#div-1 {
+  float: left;
+  width: 45%;
+  margin-left: 2%;
 }
 
-#second {
-    float: right;
-    width: 40%;
-    margin: 0 1.5%;
+#div-2 {
+  float: right;
+  width: 45%;
 }
 
-p {
-    font-size: 10px;
+#geico {
+  text-align: center;
+  font-size: 10px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 1em;
+  display: block;
 }
-#hh1 {
-    font-size: 12px;
+
+#quote {
+  display: block;
 }
-#hh2 {
-    font-size: 14px;
-}
-#hh3 {
-    font-size: 16px;
-}
-h1 {
-    font-weight: bold;
-    width:30%;
-    margin-right: auto;
-    margin-left: auto;
+
+.comments {
+  padding: 1em;
+  border-bottom: 1px solid black;
+  font-size: 12px;
 }
 
 footer {
-    margin-top: -150px;
-    height: 150px;
-    position: relative;
-    clear: both;
+  bottom: 0;
+  clear: both;
 }
 
-#firstp {
-    width:40%;
-    margin-right: auto;
-    margin-left: auto;
+.legal {
+  padding: 1em;
 }
 
-#linebreak {
-    border: 0;
-    height: 1px;
-    color: black;
+#boldie {
+  font-weight: bold;
+  font-size:  10px;
+}
+
+.weenie {
+  font-size: 10px;
 }
 
 /*
--What is important to know when linking an external file (like a stylesheet) to an HTML file?
+1. What is important to know when linking an external file (like a stylesheet) to an HTML file?
 
-It is important to know the relationship, the text style, and the link path.
+It is important to know what type of file it is, where it is located and what it is named. 
 
--What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+2. What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
 
-We used a lot of ids and I looked up codecademy a lot. It was very difficult to get our site exactly like the original one. 
+We used a lot of spans and classes/ids. Then we added padding and margin values to help with positioning. 
+We also changed the display type for some sections to ensure it was sitting correctly with everything else. 
+It took some tinkering, but we ended up getting the site to look very close to the original with only moderate
+difficulty.
 
--What CSS did you use to modify the element style (like size, color, etc.)
+3. What CSS did you use to modify the element style (like size, color, etc.)
 
-See above! :)
+You can see it right above this comment section; things like text-size, font-size, color, background color, 
+font-weight, etc.
 
--Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, how would you know which one to add to your HTML?
+4. Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, how 
+would you know which one to add to your HTML?
 
-We just used ids. I chose to use them because I remembered them from codecademy, but I can't remember the difference off the top of my head.
+We did a lot of modification to the HTML to add classes and ids. We chose both; classes for things we thought we'd
+use multiple times, and ids for single instances. I think we ended up with a few too many ids, but we had been
+working for a while and called it good. I would probably try to clean it up a bit if this was something I was going
+to actually use in the future.
 
--When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+5. When you compared your site to the actual code base, which do you think had cleaner code that followed best 
+practices and why?
 
-The actual code base had cleaner code because we got kind of lost a lot. Ours had better practice because we used CSS for styling instead of just styling in html.
+Ours did because we did our best to keep our styling in a separate CSS file. The original site's code looked very 
+messy and confusing, and all the styling was done inline in the HTML file with no CSS. TISK TISK! :)
 */
