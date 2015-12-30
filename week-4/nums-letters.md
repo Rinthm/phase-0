@@ -55,6 +55,6 @@ I enjoyed this challenge. It helped me to review some of the basics as well as p
 
 ### Links to assignments  
 
-[4.2.1 Defining Variables](defining-variables.rb)
-[4.2.2 Simple String](simple-string.rb)
+[4.2.1 Defining Variables](defining-variables.rb)  
+[4.2.2 Simple String](simple-string.rb)  
 [4.2.3 Basic Math](basic-math.rb)
