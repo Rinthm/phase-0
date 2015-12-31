@@ -14,6 +14,12 @@ puts "Well, I think #{better_int} is a bigger and better number."
 
 ##
 
+# Link to 4.3.1
+# https://github.com/Rinthm/phase-0/blob/master/week-4/address/my_solution.rb
+
+# Link to 4.3.2
+# https://github.com/Rinthm/phase-0/blob/master/week-4/math/my_solution.rb
+
 # Release 7: Reflect
 
 
