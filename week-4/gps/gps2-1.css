@@ -1,0 +1,39 @@
+* {
+  font-family: Garamond;
+}
+
+header {
+  background-color: green;
+}
+
+.column-1 {
+  background-color: blue;
+  float: left;
+  display: inline-block;
+  width: 49%;
+  height: 1400px;
+  margin-right: 1px;
+  margin-bottom: 1px;
+}
+
+.column-2 {
+  background-color: red;
+  float: right;
+  display: inline-block;
+  width: 49%;
+  height: 1400px;
+  margin-left: 1px;
+  margin-bottom: 5px;
+}
+
+footer {
+  background-color: yellow;
+  clear: both;
+  margin-top: 10px;
+  position: relative;
+}
+
+#codercat{
+  height: 100px;
+  width: 100px;
+}
