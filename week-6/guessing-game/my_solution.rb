@@ -2,7 +2,7 @@
 
 
 # I worked on this challenge by myself.
-# I spent [#] hours on this challenge.
+# I spent 2 hours on this challenge.
 
 # Pseudocode
 
@@ -24,37 +24,6 @@
 
 
 # Initial Solution
-
-# class GuessingGame
-#   def initialize(answer)
-#     @answer = answer
-#   end
-
-#   def guess(num)
-#   	@previous_guess = num
-#   	if num < @answer
-#   		return :low
-#   	elsif num > @answer
-#   		return :high
-#   	elsif num == @answer
-#   		return :correct
-#   	end
-#   end
-
-#   def solved?
-#   	if @previous_guess == @answer
-#   		return true
-#   	else
-#   		return false
-#   	end
-#   end
-
-# end
-
-
-
-
-# Refactored Solution
 
 class GuessingGame
   def initialize(answer)
@@ -83,6 +52,39 @@ class GuessingGame
 end
 
 
+
+# Refactored Solution
+
+class GuessingGame
+  def initialize(answer)
+  	raise ArgumentError.new("Please enter an integer.") unless answer.is_a?(Integer)
+    @answer = answer
+  end
+
+  def guess(num)
+  	raise ArgumentError.new("Please enter an integer.") unless num.is_a?(Integer)
+  	@previous_guess = num
+  	if num < @answer
+  		return :low
+  	elsif num > @answer
+  		return :high
+  	elsif num == @answer
+  		return :correct
+  	end
+  end
+
+  def solved?
+  	if @previous_guess == @answer
+  		return true
+  	else
+  		return false
+  	end
+  end
+
+end
+
+
+
 # Driver Code
 
 game = GuessingGame.new(3)
@@ -92,6 +94,8 @@ p game.guess(3)
 p game.solved?
 p game.guess(45)
 p game.solved?
+
+
 
 # Reflection
 
