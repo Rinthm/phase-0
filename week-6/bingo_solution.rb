@@ -1,6 +1,6 @@
 # A Nested Array to Model a Bingo Board SOLO CHALLENGE
 
-# I spent [#] hours on this challenge.
+# I spent 7 hours on this challenge.
 
 
 # Release 0: Pseudocode
@@ -147,23 +147,23 @@ class BingoBoard
       case @letter
       when 'B'
         if row[0] == @number
-          row[0] = "X"
+          row[0] = 'X'
         end
       when 'I'
         if row[1] == @number
-          row[1] = "X"
+          row[1] = 'X'
         end
       when 'N'
         if row[2] == @number
-          row[2] = "X"
+          row[2] = 'X'
         end
       when 'G'
         if row[3] == @number
-          row[3] = "X"
+          row[3] = 'X'
         end
       when 'O'
         if row[4] == @number
-          row[4] = "X"
+          row[4] = 'X'
         end
       end
     }
