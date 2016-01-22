@@ -79,3 +79,5 @@ How are constructors different from Ruby classes (in your research)?
 	a 'prototype object', but this object is just like any other object; there are no 
 	differences in properties. Also, any object can be a prototype in JavaScript. This 
 	is different from Ruby, where objects created in classes are unique to that class.
+	*/
+	
