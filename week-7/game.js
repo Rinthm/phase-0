@@ -193,8 +193,8 @@ function attack(type) {
 }
 
 function status() {
-	console.log("You have -" + player.health + "- health left.")
-	console.log(trump.name + " has -" + trump.health + "- health left.\n" )
+	console.log("You have -" + player.health + "- health left.");
+	console.log(trump.name + " has -" + trump.health + "- health left.\n" );
   if(player.health <= 0) {
      console.log("You have been defeated! The world awaits another hero to end " + trump.name + "'s terror!");
    }else if(trump.health <= 0) {
@@ -202,6 +202,12 @@ function status() {
    }
 }
 
+// Possible future additions:
+
+// Add more attacks with different amounts of damage
+// Give a chance to critically hit
+// Add the possibility of block/dodge where no one takes damage
+// Add a healing function
 
 // Driver Code
 
@@ -210,11 +216,28 @@ attack('punch')
 attack('wedgie')
 
 // Reflection
-//
-//
-//
-//
-//
-//
-//
-//
+
+/*
+What was the most difficult part of this challenge?
+
+	Probably just finding the proper syntax for everything. Otherwise, I was actually pretty surprised at how easy it was
+	to create functions and objects that interacted with each other.
+
+What did you learn about creating objects and functions that interact with one another?
+
+	I solidified my understanding of proper syntax (e.g. the difference between object[property] and object.property).
+	I also learned to remember the semi-colons and squigly brackets and parentheses that are inevitably littered throughout 
+	JavaScript code!
+
+Did you learn about any new built-in methods you could use in your refactored solution? If so, what were they and how do they work?
+
+	My game didn't end up needing many built-in methods (at least not that I'm aware). I did find 'Math.random()' to generate a 
+	random decimal number between 0 and 1. You can also use 'Math.floor' (which rounds down to the nearest whole number) and pass in 
+	arguments to specify a desired range of numbers. For example, 'Math.floor((Math.random() * 100) + 1)' would generate a whole 
+	number between 1-100. I however didn't find this to be necessary to do for my game.
+
+How can you access and manipulate properties of objects?
+
+	The easiest way I've found is to access the property like this: object.property, and then you can just set the value to 
+	whatever you want. For example, 'object.property += 1' would add 1 to the value of that property. Or, you could do 
+	'object.propery = "this"' to just reset the value of the property.
