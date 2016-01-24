@@ -135,7 +135,7 @@ function moves() {
 	console.log("'punch': 10 damage");
 	console.log("'kick': 30 damage");
 	console.log("'remove toupee': 50 damage");
-	console.log("You must enter each attack exactly as it is listed!\n");
+	console.log("You must enter each attack exactly as it is listed, quotes included!\n");
 }
 
 function punch() {
@@ -193,8 +193,8 @@ function attack(type) {
 }
 
 function status() {
-	console.log("You have -" + player.health + "- health left.");
-	console.log(trump.name + " has -" + trump.health + "- health left.\n" );
+	console.log("You have |" + player.health + "| health left.");
+	console.log(trump.name + " has |" + trump.health + "| health left.\n" );
   if(player.health <= 0) {
      console.log("You have been defeated! The world awaits another hero to end " + trump.name + "'s terror!");
    }else if(trump.health <= 0) {
@@ -213,6 +213,8 @@ function status() {
 
 play()
 attack('punch')
+attack('kick')
+attack('remove toupee')
 attack('wedgie')
 
 // Reflection
@@ -241,3 +243,4 @@ How can you access and manipulate properties of objects?
 	The easiest way I've found is to access the property like this: object.property, and then you can just set the value to 
 	whatever you want. For example, 'object.property += 1' would add 1 to the value of that property. Or, you could do 
 	'object.propery = "this"' to just reset the value of the property.
+*/
