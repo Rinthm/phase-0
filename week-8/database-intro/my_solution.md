@@ -41,7 +41,7 @@ Databases are for storing large amounts of data so you don't use up as much spac
 
 **2. What is a one-to-many relationship?**
 
-A one-to-many relationship is when a piece of data correlates to another pice of data that has many other correlations. For example, 3 correlates to 'integer', and 'integer' had many correlations.
+A one-to-many relationship is when a piece of data correlates to another pice of data that has many other correlations. For example, 3 correlates to 'integer', and 'integer' has many correlations.
 
 **3. What is a primary key? What is a foreign key? How can you determine which is which?**
 
