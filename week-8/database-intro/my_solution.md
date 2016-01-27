@@ -37,16 +37,16 @@
 
 **1. What are databases for?**
 
-	Databases are for storing large amounts of data so you don't use up as much space. They are also used for ordering and selecting from the data.
+Databases are for storing large amounts of data so you don't use up as much space. They are also used for ordering and selecting from the data.
 
 **2. What is a one-to-many relationship?**
 
-	A one-to-many relationship is when a piece of data correlates to another pice of data that has many other correlations. For example, 3 correlates to 'integer', and 'integer' had many correlations.
+A one-to-many relationship is when a piece of data correlates to another pice of data that has many other correlations. For example, 3 correlates to 'integer', and 'integer' had many correlations.
 
 **3. What is a primary key? What is a foreign key? How can you determine which is which?**
 
-	A primary key is a key that uniquely identifies each data entry of a table. These are often numerical ID numbers. A foreign key is a key in a child table that is used to reference the primary key of the parent table. These can be differentiated by looking at their relationship to other values: A primary key can be associated with many other values, whereas the foreign key is uniquely related to the primary key.
+A primary key is a key that uniquely identifies each data entry of a table. These are often numerical ID numbers. A foreign key is a key in a child table that is used to reference the primary key of the parent table. These can be differentiated by looking at their relationship to other values: A primary key can be associated with many other values, whereas the foreign key is uniquely related to the primary key.
 
 **4. How can you select information out of a SQL database? What are some general guidelines for that?**
 
-	You can select information out of an SQL database by using SQL commands like 'SELECT', 'ORDER BY', 'WHERE', etc. Some general guidelines are to write commands in all-caps, and to end each series of commands with a semi-colon. I like to add a new line after each chunk of command (or "action/sentence").
+You can select information out of an SQL database by using SQL commands like 'SELECT', 'ORDER BY', 'WHERE', etc. Some general guidelines are to write commands in all-caps, and to end each series of commands with a semi-colon. I like to add a new line after each chunk of command (or "action/sentence").
