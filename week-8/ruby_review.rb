@@ -1,7 +1,7 @@
 # Create a Playlist from Driver Code
 
 # I worked on this challenge by myself.
-# I spent [#] hours on this challenge.
+# I spent 3 hours on this challenge.
 
 
 # Pseudocode
