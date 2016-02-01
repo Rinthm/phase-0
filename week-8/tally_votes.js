@@ -1,8 +1,8 @@
 
 // Tally Votes in JavaScript Pairing Challenge.
 
-// I worked on this challenge with:
-// This challenge took me [#] hours.
+// I worked on this challenge with: Emily Bosakowski
+// This challenge took us 4 hours.
 
 // These are the votes cast by each student. Do not alter these objects here.
 var votes = {
@@ -42,18 +42,6 @@ var voteCount = {
   treasurer: {}
 }
 
-/* The name of each student receiving a vote for an office should become a property
-of the respective office in voteCount.  After Alex's votes have been tallied,
-voteCount would be ...
-  var voteCount = {
-    president: { Bob: 1 },
-    vicePresident: { Devin: 1 },
-    secretary: { Gail: 1 },
-    treasurer: { Kerry: 1 }
-  }
-*/
-
-
 /* Once the votes have been tallied, assign each officer position the name of the
 student who received the most votes. */
 var officers = {
@@ -65,47 +53,116 @@ var officers = {
 
 // Pseudocode
 
+// input - A data structure that links the name of a person to their voter ballot. Each ballot is a data structure in itself, linking an office to the name of the candidates the voter is voting for
+
+// Loop through each voter name on the inputted structure
+//   loop through each individual vote (for each position) on the ballot
+//      identify the office/position in that particular vote, and the candidate
+//      assign that vote to another data structure that stores the vote counts for each office
+//     IF the candidate's name is not in the structure for that position
+//         add the name as a new item, and insert 1 as the count
+//    ELSE IF the candidate's name is already in the structure
+//          add one to the count of votes the candidate received for that office
+// return a data structure that is a list of offices, and each office points to a list of candidate names and the number of votes each candidate received      
+// Take that data structure and loop through each office at a time
+//    FOR each office, find the name of the candidate that is linked to the largest number of votes
+//    Write that candidate's name to another data structure that stores the winners of the office
+// return data structure of winners as the output
+
+// output - A data structure that links an office in Student Government to the name of the person who received the most votes for that office
 
 // __________________________________________
 // Initial Solution
 
 for (var voter in votes) {
   if (votes.hasOwnProperty(voter)) {
-     var ballot = votes[voter];
-     console.log(ballot + "Is the ballot");
-     console.log(voter+ "Is the voter");
-     for (var office in ballot) {
-       console.log(office + "is the office");
-        if (ballot.hasOwnProperty(office)) {
-           var name = ballot[office];
-           console.log(name + "Is the name");
-           break;
-
+    var ballot = votes[voter];
+    for (var vote in ballot) {
+      if (ballot.hasOwnProperty(vote)) {
+        var candidate = ballot[vote];
+        var numberOfVotes = [];
+        if (voteCount[vote][candidate]) {
+          voteCount[vote][candidate] += 1;
+        } else {
+          voteCount[vote][candidate] = 1;
         }
-     }
+      }
+    }
   }
-};
+}
 
-
-
-
+for (var offices in voteCount) {
+  if (voteCount.hasOwnProperty(offices)) {
+  var numberOfVotes = 0;
+  var candidate = voteCount[offices];
+    for (var name in candidate) {
+      if (candidate.hasOwnProperty(name)) {
+        var votes = candidate[name];
+        if (numberOfVotes < votes) {
+          numberOfVotes = votes;
+          officers[offices] = name;
+        } 
+      }
+    }
+  }
+}
 
 
 // __________________________________________
 // Refactored Solution
 
+for (var voter in votes) {
+  var ballot = votes[voter];
+  for (var vote in ballot) {
+    var candidate = ballot[vote];
+    if (voteCount[vote][candidate]) {
+      voteCount[vote][candidate] += 1;
+    } else {
+      voteCount[vote][candidate] = 1;
+    }
+  }
+}
 
+for (var offices in voteCount) {
+  var numberOfVotes = 0;
+  var candidate = voteCount[offices];
+  for (var name in candidate) {
+    var votes = candidate[name];
+    if (numberOfVotes < votes) {
+      numberOfVotes = votes;
+      officers[offices] = name; 
+    }
+  }
+}
 
+// __________________________________________
+// Driver Code
 
-
+console.log(voteCount)
+console.log(officers)
 
 // __________________________________________
 // Reflection
 
+/*
+What did you learn about iterating over nested objects in JavaScript?
 
+  I learned that it is VERY important to keep track of variable names. It is
+  very easy to get lost in the for loops, especially with confusing/unclear
+  variable names.
 
+Were you able to find useful methods to help you with this?
 
+  We unfortuntately didn't find any methods that we could use. We had to throw 
+  in the towell after about 4 hours of working on the challenge. We thought
+  about using the Math.max() method, but couldn't figure out a way to pass all
+  the values in a way that would work properly.
 
+What concepts were solidified in the process of working through this challenge?
+
+  Accessing nested properties/values was solidified while working on this
+  challenge, yet I still think I need more practice to really get it down.
+*/
 
 // __________________________________________
 // Test Code:  Do not alter code below this line.
