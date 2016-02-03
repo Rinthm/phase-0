@@ -165,5 +165,6 @@ Did an array or object make more sense to use and why
 
 	An object made more sense to me because all of the items on the list would be 
 	paired with quantities, so an object already assumes this relationship.
+*/
 
 
